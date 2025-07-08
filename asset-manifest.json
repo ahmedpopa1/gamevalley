@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/gamevalley/static/css/main.8e437893.css",
-    "main.js": "/gamevalley/static/js/main.915fcca6.js",
+    "main.js": "/gamevalley/static/js/main.9948fbd2.js",
     "static/js/787.d4aba7ab.chunk.js": "/gamevalley/static/js/787.d4aba7ab.chunk.js",
     "static/media/lool2.jpg": "/gamevalley/static/media/lool2.23a5aa118326abd87aaa.jpg",
     "static/media/lool1.jpg": "/gamevalley/static/media/lool1.fdfe98a7d236a7953ec4.jpg",
@@ -29,11 +29,11 @@
     "static/media/logo.png": "/gamevalley/static/media/logo.1b9e0ae5d039048d64d5.png",
     "index.html": "/gamevalley/index.html",
     "main.8e437893.css.map": "/gamevalley/static/css/main.8e437893.css.map",
-    "main.915fcca6.js.map": "/gamevalley/static/js/main.915fcca6.js.map",
+    "main.9948fbd2.js.map": "/gamevalley/static/js/main.9948fbd2.js.map",
     "787.d4aba7ab.chunk.js.map": "/gamevalley/static/js/787.d4aba7ab.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.8e437893.css",
-    "static/js/main.915fcca6.js"
+    "static/js/main.9948fbd2.js"
   ]
 }
