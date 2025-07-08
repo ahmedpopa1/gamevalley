@@ -1,0 +1,39 @@
+{
+  "files": {
+    "main.css": "/gamevalley/static/css/main.8e437893.css",
+    "main.js": "/gamevalley/static/js/main.915fcca6.js",
+    "static/js/787.d4aba7ab.chunk.js": "/gamevalley/static/js/787.d4aba7ab.chunk.js",
+    "static/media/lool2.jpg": "/gamevalley/static/media/lool2.23a5aa118326abd87aaa.jpg",
+    "static/media/lool1.jpg": "/gamevalley/static/media/lool1.fdfe98a7d236a7953ec4.jpg",
+    "static/media/lool3.jpg": "/gamevalley/static/media/lool3.9e84069f3f2cfd6c8129.jpg",
+    "static/media/lool4.jpg": "/gamevalley/static/media/lool4.ac75f3c611896828c54d.jpg",
+    "static/media/l4.jpg": "/gamevalley/static/media/l4.3f7843c944574db311ed.jpg",
+    "static/media/ap.jpg": "/gamevalley/static/media/ap.be1ecd60c4e3859ecf31.jpg",
+    "static/media/l2.jpg": "/gamevalley/static/media/l2.06a55efed427f0a042b1.jpg",
+    "static/media/8.jpg": "/gamevalley/static/media/8.a8c4b0771226e533a525.jpg",
+    "static/media/3.jpg": "/gamevalley/static/media/3.49e5956ed9487400c0d4.jpg",
+    "static/media/l1.jpg": "/gamevalley/static/media/l1.5faccecdc4461b3b21b0.jpg",
+    "static/media/l3.jpg": "/gamevalley/static/media/l3.0b4d75c9d061161ec456.jpg",
+    "static/media/7.jpg": "/gamevalley/static/media/7.3ba21bc0168f3a4e2c0e.jpg",
+    "static/media/9.jpg": "/gamevalley/static/media/9.7880b36ecae2b16ae353.jpg",
+    "static/media/11.jpg": "/gamevalley/static/media/11.cbfb20c1f223c88191d8.jpg",
+    "static/media/l5.jpg": "/gamevalley/static/media/l5.255b4617a204cba4bb2f.jpg",
+    "static/media/start.png": "/gamevalley/static/media/start.9e60d440a5edf25e894c.png",
+    "static/media/l6.jpg": "/gamevalley/static/media/l6.d2f9ef0ff89c473a1e81.jpg",
+    "static/media/12.jpg": "/gamevalley/static/media/12.2d6704db1c7b4a8bd95f.jpg",
+    "static/media/4.jpg": "/gamevalley/static/media/4.2c7c1dfe1eec5566ca5d.jpg",
+    "static/media/5.jpg": "/gamevalley/static/media/5.9c36ac3d140b770ee471.jpg",
+    "static/media/6.jpg": "/gamevalley/static/media/6.b08a0e2c1b6587d577be.jpg",
+    "static/media/10.jpg": "/gamevalley/static/media/10.a77e773eb1bab19d8d49.jpg",
+    "static/media/car.jpg": "/gamevalley/static/media/car.ba1b95dc638f8997cd3f.jpg",
+    "static/media/logo.png": "/gamevalley/static/media/logo.1b9e0ae5d039048d64d5.png",
+    "index.html": "/gamevalley/index.html",
+    "main.8e437893.css.map": "/gamevalley/static/css/main.8e437893.css.map",
+    "main.915fcca6.js.map": "/gamevalley/static/js/main.915fcca6.js.map",
+    "787.d4aba7ab.chunk.js.map": "/gamevalley/static/js/787.d4aba7ab.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8e437893.css",
+    "static/js/main.915fcca6.js"
+  ]
+}
