@@ -1,0 +1,157 @@
+/* ========== NAVBAR MAIN ========== */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+ 
+  position: relative;
+  z-index: 10;
+  
+}
+
+.logo {
+  width: 250px;
+  height: auto;
+}
+
+/* Links */
+.navbar-links-container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links-container a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #ff0000;
+  font-size: 1.2rem;
+  font-weight: 600;
+  transition: color 0.2s;
+}
+
+.navbar-links-container a:hover {
+  color: #fff;
+}
+
+/* Button */
+.primary-button {
+  padding: 0.8rem 1.5rem;
+  background-color: #ffffff;
+  border: none;
+  border-radius: 5rem;
+  font-size: 1rem;
+  cursor: pointer;
+  font-weight: 600;
+  transition: background-color 0.3s ease;
+}
+
+.primary-button:hover {
+  background-color: #ff0000;
+  color: #fff;
+}
+
+/* Hamburger Icon */
+.navbar-menu-container {
+  display: none;
+  align-items: center;
+  cursor: pointer;
+}
+
+.navbar-menu-container svg {
+  font-size: 2rem;
+  color: #fff;
+}
+
+/* Mobile Menu Dropdown */
+.mobile-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #000;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  padding: 1rem 2rem;
+}
+
+.mobile-menu a {
+  color: #ff0000;
+  text-decoration: none;
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.mobile-menu a:hover {
+  color: #fff;
+}
+
+/* ========== RESPONSIVE STYLES ========== */
+@media screen and (max-width: 800px) {
+  .navbar-links-container {
+    display: none;
+  }
+
+  .navbar-menu-container {
+    display: flex;
+  }
+
+  .mobile-menu {
+    display: flex;
+  }
+
+  .primary-button {
+    font-size: 0.95rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .logo {
+    width: 140px;
+  }
+}
+
+.navbar-links-container {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+@media screen and (max-width: 800px) {
+  .navbar-links-container {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: 80px;
+    right: 0;
+    width: 100%;
+    padding: 1rem 0;
+    text-align: center;
+    z-index: 99;
+  }
+
+  .navbar-links-container.active {
+    display: flex;
+  }
+
+  .navbar-links-container a,
+  .navbar-links-container .primary-button {
+    font-size: 1.2rem;
+    margin: 0.5rem 0;
+    color: #ff0000;
+    text-decoration: none;
+  }
+
+  .navbar-links-container a:hover {
+    color: #fff;
+  }
+
+  .navbar-menu-container {
+    display: flex;
+  }
+
+  .sear {
+    display: none;
+  }
+}

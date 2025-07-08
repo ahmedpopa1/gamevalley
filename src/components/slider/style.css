@@ -1,0 +1,58 @@
+.slider-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.content {
+  position: relative;
+}
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 40px; /* Adjust size as needed */
+  height: 40px; /* Adjust size as needed */
+  background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.prev {
+  left: 10px; /* Adjust position as needed */
+}
+
+.next {
+  right: 10px; /* Adjust position as needed */
+}
+
+.arrow {
+  width: 20px; /* Adjust size as needed */
+  height: 20px; /* Adjust size as needed */
+}
+
+.slide-panel {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth transition effect */
+}
+
+.photo {
+  min-width: 100%; /* Ensure each image takes up at least full width */
+  height: auto;
+  flex: 0 0 auto; /* Prevent images from growing or shrinking */
+}
+
+/* Optional: Adjustments for better visibility or additional styles */
+.photo {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow for better separation */
+}
+
+.prev:hover,
+.next:hover {
+  background-color: rgba(255, 255, 255, 0.8); /* Lighten background on hover */
+}

@@ -1,0 +1,101 @@
+/********** HOME CONTAINER **********/
+.home-container {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url('./../../Assets/car.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100%;
+  padding: 50px 80px;
+  box-sizing: border-box;
+}
+
+/********** GRID CONTAINER **********/
+.home-banner-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 24px;
+  padding: 30px 0;
+  animation: fadeIn 1s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/********** GAME CARD **********/
+.game-info {
+  position: relative;
+  width: 100%;
+  padding-bottom: 100%; /* Square aspect ratio */
+  overflow: hidden;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  cursor: pointer;
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+
+.game-info:hover {
+  transform: translateY(-8px) scale(1.02);
+  border-color: #e60023;
+}
+
+/********** GAME CONTENT **********/
+.game-info-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  background-color: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(4px);
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease, color 0.3s ease;
+}
+
+.game-info:hover .game-info-content {
+  background-color: rgba(0, 0, 0, 0.6);
+  color: #fff;
+}
+
+/********** TEXT STYLES **********/
+.game-info h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: inherit;
+}
+
+.game-info p {
+  font-size: 1.2rem;
+  color: inherit;
+  margin: 0;
+}
+
+/********** IMAGE STYLES **********/
+.game-info img {
+  position: absolute;
+  top: 0; 
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  border-radius: 12px;
+}
+
+/********** EXTRA TEXT CLASS **********/
+.lol {
+  font-size: 30px;
+  color: #e60023;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 2px #00000044;
+}

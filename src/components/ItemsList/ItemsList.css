@@ -1,0 +1,135 @@
+/* Global Styles */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-image: url('./../../Assets/ap.jpg');
+    background-size: cover;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Container Styles */
+.row {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Card Styles */
+.card {
+    justify-content: space-around;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 600px;
+    height: 400px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+/* Card Image */
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+/* Card Header */
+.card-header {
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    background: linear-gradient(to right, #000000, #ffffff);
+    color: #fff;
+    width: 100%;
+}
+
+.card-body {
+    padding: 20px;
+    text-align: left;
+    font-size: 16px;
+    color: #333;
+    background-size: cover;
+    background-position: center;
+    height: 300px; /* Adjust height to your preference */
+    position: relative;
+}
+
+.card-body::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Optional: Add a semi-transparent overlay */
+    z-index: 1;
+}
+
+.card-body p {
+    margin-bottom: 10px;
+}
+
+.card-body span {
+    font-weight: bold;
+    color: #c4c2c1;
+}
+
+/* Button Styles */
+.btn-list {
+    outline: none;
+    cursor: pointer;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    font-family: inherit;
+    font-weight: bold;
+    font-size: 16px;
+    border-radius: 30px;
+    background: #ffffff;
+    color: #161313;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+    transition: background 0.4s;
+}
+
+.btn-list:hover {
+    background: #66504c;
+}
+
+.btn-list span {
+    position: relative;
+    z-index: 10;
+    transition: color 0.4s;
+}
+
+.btn-list:hover span {
+    color: #000;
+}
+
+.btn-list::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.2);
+    transition: left 0.4s cubic-bezier(0.3, 1, 0.8, 1);
+}
+
+.btn-list:hover::before {
+    left: 100%;
+}

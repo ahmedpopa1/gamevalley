@@ -1,0 +1,109 @@
+/* style.css */
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.model {
+  padding: 2rem;
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+}
+
+.model h1 p {
+  font-size: 2rem;
+  margin: 0;
+  color: #222;
+}
+
+.model h2 {
+  font-size: 1.2rem;
+  color: #666;
+  margin-top: 0.5rem;
+}
+
+.model ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+.model li {
+  font-size: 1rem;
+  color: #444;
+}
+
+.body {
+  display: flex;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #fafafa;
+}
+
+.itemPhoto img {
+  max-width: 90%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.rate {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.rating {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.rating input[type="radio"] {
+  display: none;
+}
+
+.star {
+  cursor: pointer;
+  transition: transform 0.2s ease, color 0.2s ease;
+}
+
+.star:hover {
+  transform: scale(1.2);
+}
+
+.review {
+  padding: 2rem;
+  background-color: #fff;
+  border-top: 1px solid #eee;
+  text-align: center;
+}
+
+.review h1 {
+  font-size: 1.5rem;
+  color: #333;
+}
+@media screen and (max-width: 768px) {
+  .itemDetails {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .itemPhoto,
+  .details {
+    width: 100%;
+    text-align: center;
+  }
+
+  .model p.about {
+    text-align: center;
+  }
+
+  .textarea {
+    width: 95%;
+  }
+}
