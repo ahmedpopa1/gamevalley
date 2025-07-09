@@ -28,7 +28,7 @@
 .game-info {
   position: relative;
   width: 100%;
-  padding-bottom: 100%; /* Square aspect ratio */
+  padding-bottom: 100%;
   overflow: hidden;
   border: 1px solid #ddd;
   border-radius: 12px;
@@ -98,4 +98,41 @@
   font-weight: bold;
   letter-spacing: 1px;
   text-shadow: 1px 1px 2px #00000044;
+}
+
+/********** ✅ MEDIA QUERIES **********/
+@media (max-width: 768px) {
+  .home-container {
+    padding: 30px 20px;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .home-banner-container {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    padding: 20px 0;
+  }
+
+  .game-info {
+    padding-bottom: 130%; /* taller for mobile */
+  }
+
+  .game-info-content {
+    padding: 12px;
+    align-items: center;
+    text-align: center;
+  }
+
+  .game-info h2 {
+    font-size: 1.2rem;
+  }
+
+  .game-info p {
+    font-size: 1rem;
+  }
+
+  .lol {
+    font-size: 20px;
+  }
 }

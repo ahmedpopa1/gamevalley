@@ -14,25 +14,46 @@
 }
 
 .primary-heading {
+
   font-size: 2.8rem;
   margin-bottom: 15px;
+  color: #ddd;
 }
 
 .primary-text {
   font-size: 1.2rem;
   line-height: 1.6;
   margin-bottom: 30px;
+  color: #ddd;
 }
+
+@media (max-width: 768px) {
+  .primary-heading {
+    font-size: 2.1rem;
+    margin-bottom: 10px;
+
+  }
+
+  .primary-text {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+
+  }
+}
+
 
 .work-section-bottom {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
-  text-align: center; /* Center align text */
+  text-align: center;
 }
 
+
 .lol {
-  width: 100%; /* Full width */
+  width: 100%;
+  /* Full width */
   font-size: 2.8rem;
   margin-bottom: 15px;
 }
@@ -48,8 +69,10 @@
 
 .game-info:hover {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  transform: translateY(-5px); /* Move the card up by 5px on hover */
-  transition: box-shadow 0.1s ease, transform 0.1s ease; /* Add transform to the transition */
+  transform: translateY(-5px);
+  /* Move the card up by 5px on hover */
+  transition: box-shadow 0.1s ease, transform 0.1s ease;
+  /* Add transform to the transition */
 }
 
 

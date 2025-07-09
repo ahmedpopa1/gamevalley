@@ -1,13 +1,11 @@
-/* ========== NAVBAR MAIN ========== */
+/* ========== NAVBAR BASE ========== */
 nav {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1rem 2rem;
- 
   position: relative;
   z-index: 10;
-  
 }
 
 .logo {
@@ -19,10 +17,10 @@ nav {
 .navbar-links-container {
   display: flex;
   align-items: center;
+  gap: 1.5rem;
 }
 
 .navbar-links-container a {
-  margin-right: 1rem;
   text-decoration: none;
   color: #ff0000;
   font-size: 1.2rem;
@@ -63,67 +61,18 @@ nav {
   color: #fff;
 }
 
-/* Mobile Menu Dropdown */
-.mobile-menu {
-  display: none;
-  flex-direction: column;
-  background-color: #000;
-  position: absolute;
-  top: 100%;
-  right: 0;
-  width: 100%;
-  padding: 1rem 2rem;
-}
-
-.mobile-menu a {
-  color: #ff0000;
-  text-decoration: none;
-  font-size: 1.2rem;
-  font-weight: 600;
-  margin-bottom: 1rem;
-}
-
-.mobile-menu a:hover {
-  color: #fff;
-}
-
 /* ========== RESPONSIVE STYLES ========== */
 @media screen and (max-width: 800px) {
-  .navbar-links-container {
-    display: none;
-  }
-
-  .navbar-menu-container {
-    display: flex;
-  }
-
-  .mobile-menu {
-    display: flex;
-  }
-
-  .primary-button {
-    font-size: 0.95rem;
-    padding: 0.6rem 1.2rem;
-  }
-
   .logo {
     width: 140px;
   }
-}
 
-.navbar-links-container {
-  display: flex;
-  align-items: center;
-  gap: 1.5rem;
-}
-
-@media screen and (max-width: 800px) {
   .navbar-links-container {
     display: none;
     flex-direction: column;
     background-color: #000;
     position: absolute;
-    top: 80px;
+    top: 100%;
     right: 0;
     width: 100%;
     padding: 1rem 0;
@@ -153,5 +102,20 @@ nav {
 
   .sear {
     display: none;
+  }
+}
+ @media screen and (max-width: 800px) {
+  .sear {
+    width: 100%;
+    margin-top: 1rem;
+    display: block;
+  }
+
+  .navbar-links-container.active {
+    flex-direction: column;
+  }
+
+  .navbar-links-container {
+    text-align: center;
   }
 }
