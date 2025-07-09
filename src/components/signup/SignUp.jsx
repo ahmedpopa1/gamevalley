@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import './style.css';
+import "./style.css";
+import { useNavigate } from "react-router-dom";
 
 export const SignUp = () => {
   const [name, setName] = useState("");
@@ -7,6 +8,7 @@ export const SignUp = () => {
   const [password, setPassword] = useState("");
   const [confirmedPassword, setConfirmedPassword] = useState("");
   const [error, setError] = useState("");
+  const navigate = useNavigate();
 
   const handleNameChange = (event) => {
     setName(event.target.value);
@@ -53,6 +55,12 @@ export const SignUp = () => {
 
   return (
     <div className="container">
+      <div className="go-back-container">
+        <button className="go-back" onClick={() => navigate(-1)}>
+          ⬅ Go Back
+        </button>
+      </div>
+
       <div className="header">
         <div className="text">Sign UP</div>
       </div>
