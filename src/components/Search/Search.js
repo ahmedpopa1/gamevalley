@@ -10,7 +10,7 @@ const Search = ({ value, onChange, onClear }) => {
       <input
         className="input1"
         type="search"
-        placeholder="Search for a car..."
+        placeholder="Search for a game..."
         value={value}
         onChange={onChange}
       />
